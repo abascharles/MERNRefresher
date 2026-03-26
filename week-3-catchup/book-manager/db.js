@@ -7,3 +7,5 @@ async function connectDB() {
   await client.connect();
   return client.db('bookstore').collection('books');
 }
+
+module.exports = connectDB;
